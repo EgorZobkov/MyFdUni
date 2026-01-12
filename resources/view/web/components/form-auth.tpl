@@ -33,7 +33,7 @@
 
         <h4 class="mb20" > <strong class="auth-block-welcome" ></strong> </h4>
 
-        <input type="text"  class="form-control" placeholder="<?php echo translate("tr_d304162d4168085c50aa8b15ded4c2fa"); ?>" name="auth_password">
+        <input type="password"  class="form-control" placeholder="<?php echo translate("tr_d304162d4168085c50aa8b15ded4c2fa"); ?>" name="auth_password">
 
         <label class="form-label-error" data-name="auth_password" ></label>
 
@@ -63,7 +63,7 @@
         <input type="text"  class="form-control" autocomplete="off" placeholder="<?php echo translate("tr_51ebfc2ff6ad41a51b45c6d44ff65b7f"); ?>" name="registration_name">
         <label class="form-label-error" data-name="registration_name" ></label>
 
-        <input type="text"  class="form-control mt10" autocomplete="off" placeholder="<?php echo translate("tr_5ebe553e01799a927b1d045924bbd4fd"); ?>" name="registration_password">
+        <input type="password"  class="form-control mt10" autocomplete="off" placeholder="<?php echo translate("tr_5ebe553e01799a927b1d045924bbd4fd"); ?>" name="registration_password">
         <label class="form-label-error" data-name="registration_password" ></label>
 
         <button class="btn-custom button-color-scheme1 buttonActionAuthCombined mt25 width100" ><?php echo translate("tr_9f4469cd15821d96559ee65c24349e3f"); ?></button>
@@ -81,7 +81,7 @@
 
       <?php echo $app->ui->outInputLogin(); ?>
 
-      <input type="text" class="form-control mt10" placeholder="<?php echo translate("tr_5ebe553e01799a927b1d045924bbd4fd"); ?>" name="auth_password">
+      <input type="password" class="form-control mt10" placeholder="<?php echo translate("tr_5ebe553e01799a927b1d045924bbd4fd"); ?>" name="auth_password">
       <label class="form-label-error" data-name="auth_password" ></label>
 
       <div class="mt10" >
@@ -118,7 +118,7 @@
       <input type="text" class="form-control mt10" placeholder="<?php echo translate("tr_51ebfc2ff6ad41a51b45c6d44ff65b7f"); ?>" name="registration_name">
       <label class="form-label-error" data-name="registration_name" ></label>
 
-      <input type="text" class="form-control mt10" placeholder="<?php echo translate("tr_5ebe553e01799a927b1d045924bbd4fd"); ?>" name="registration_password">
+      <input type="password" class="form-control mt10" placeholder="<?php echo translate("tr_5ebe553e01799a927b1d045924bbd4fd"); ?>" name="registration_password">
       <label class="form-label-error" data-name="registration_password" ></label>
 
       <button class="btn-custom button-color-scheme1 width100 buttonActionRegistrationSeparate mt25" ><?php echo translate("tr_e9c3a648ce9e5dcf3c96940e682a72a2"); ?></button>
