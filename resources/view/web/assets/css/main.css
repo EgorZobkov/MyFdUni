@@ -2395,6 +2395,18 @@ footer{
 .container-user-rating-stars{
     display: flex; align-items: flex-end;
 }
+.profile-user-telegram{
+    font-weight: 600;
+}
+.profile-user-telegram a{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: black;
+}
+.profile-user-telegram a:hover{
+    color: #0066f5;
+}
 .dropdown-box-list-nested{
     display: none;
 }
