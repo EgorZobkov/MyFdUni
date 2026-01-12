@@ -18,7 +18,7 @@
      
          {% if($value["code"] == "slider_categories"): %}
 
-         <section class="widget-categories-container d-none d-lg-block" >{{ $template->component->home->outCategories() }}</section>
+         <section class="widget-categories-container d-none d-lg-flex" >{{ $template->component->home->outCategories() }}</section>
 
          {% endif %}
 
