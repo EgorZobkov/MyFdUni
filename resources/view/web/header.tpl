@@ -322,7 +322,6 @@
             
             <div class="mobile-menu-list-link-item" >{{ $template->component->translate->outChangeLanguages(["align-vertical"=>"top", "align-horizontal"=>"left"]) }}</div>
             <a href="{{ outLink() }}" class="mobile-menu-list-link-item" >{{ translate("tr_047f5653b183292396e67f14c8750b73") }}</a>
-            <a href="{{ outRoute('shops') }}" class="mobile-menu-list-link-item" >{{ translate("tr_cfb8af01cc910b08e8796e03cf662f5f") }}</a>
             <a href="{{ outRoute('blog') }}" class="mobile-menu-list-link-item" >{{ translate("tr_103a554114af7c598a4f835ac463722e") }}</a>
 
             {% if($template->router->currentRoute->name == "shop-catalog" || $template->router->currentRoute->name == "shop" || $template->router->currentRoute->name == "shop-page"): %}
@@ -337,16 +336,17 @@
         </div>
 
         {% if($template->router->currentRoute->name != "shop-catalog" && $template->router->currentRoute->name != "shop" && $template->router->currentRoute->name != "shop-page"): %}
-        <h5 class="mt20 mb20" > <strong>{{ translate("tr_6926e02be4135897ae84b36941554684") }}</strong> </h5>
+        <h5 class="mt30 mb10" > <strong>{{ translate("tr_6926e02be4135897ae84b36941554684") }}</strong> </h5>
 
-        <div class="mobile-grid-menu-categories" >
-           <div class="row g-2" >
-            
-            {{ $template->component->ads_categories->outMainCategoriesGrid() }}
-            
-           </div>
+        <div class="mobile-menu-categories" >
+            {{ $template->component->ads_categories->outMainCategoriesMobileList() }}
         </div>
         {% endif %}
+
+        <div class="mobile-menu-footer-links" >
+            <a href="{{ outLink('rules') }}" class="mobile-menu-footer-link" >{{ translate("tr_65053ca2a9f911a081ff806e7ebd9699") }}</a>
+            <a href="{{ outLink('privacy-policy') }}" class="mobile-menu-footer-link" >{{ translate("tr_5513903457691ab06b8c78a293889379") }}</a>
+        </div>
 
     </div>
 </div>

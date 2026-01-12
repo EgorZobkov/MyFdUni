@@ -495,6 +495,31 @@ public function outMainCategoriesGrid(){
 
 }
 
+public function outMainCategoriesMobileList(){
+    global $app;
+
+    $content = '';
+
+    if($this->getMainCategories()){
+
+          foreach ($this->getMainCategories() as $key => $value) {
+
+            $subcategories = [];
+
+            if(isset($this->categories["parent_id"][ $value["id"] ])){
+                $subcategories = $this->categories["parent_id"][ $value["id"] ];
+            }
+
+            $content .= $app->view->setParamsComponent(['value'=>$value, 'subcategories'=>$subcategories])->includeComponent('items/mobile-menu-category-item.tpl');
+
+          }
+
+    }
+
+    return $content;
+
+}
+
 public function outMainCategoriesInAdCreate(){
     global $app;
 
