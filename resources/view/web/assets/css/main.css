@@ -156,7 +156,8 @@ h1{
 .h-logo{
     height: 100%;
     display: inline-flex;
-    align-items: center;      
+    align-items: center;
+    padding: 6px 0;
 }
 .h-logo img{
     max-height: 45px;
@@ -221,7 +222,7 @@ h1{
     color: #f95146;
 }
 .header-wow-top{
-    position: relative; background: linear-gradient(180deg, #4b4b4b 0, #4b4b4b 48px, #fff 0, #fff); color: white; height: 48px; display: flex; align-items: center;
+    position: relative; background: linear-gradient(180deg, #4b4b4b 0, #4b4b4b 60px, #fff 0, #fff); color: white; display: flex; align-items: center; padding: 6px 0;
 
 }
 .header-wow-sticky-mobile{
@@ -310,9 +311,13 @@ h1{
 }
 .header-wow-top-list{
     padding-top: 2px;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
 }
 .header-wow-top-list .header-wow-top-list-item{
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     color: white;
     margin-right: 30px;
     font-weight: 500;
