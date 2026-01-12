@@ -290,6 +290,23 @@ $(document).ready(function () {
 
    });
 
+   $(document).on('click','.mobile-menu-category-toggle', function (e) {
+
+      var $item = $(this).closest('.mobile-menu-category-item');
+      var $sublist = $item.find('.mobile-menu-category-sublist');
+
+      if($sublist.length){
+         $item.toggleClass('is-open');
+         $sublist.slideToggle(200);
+      }else{
+         var link = $(this).data('link');
+         if(link){
+            window.location.href = link;
+         }
+      }
+
+   });
+
    $(document).on('click','.close-header-menu-mobile', function (e) { 
 
       $('.big-catalog-menu-mobile-container').hide();
