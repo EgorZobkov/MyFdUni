@@ -39,15 +39,13 @@
                     <a href="{{ outRoute('profile-favorites') }}" class="header-wow-top-list-icon-item" ><i class="ti ti-heart"></i></a>
                     {% endif %} 
 
-                    {% if($template->view->visible_header == false): %}
                     {% if($template->user->isAuth()): %}
                     <div class="header-wow-top-list-profile">
                         {% component profile/menu/header-menu.tpl %}
                     </div>
                     {% else: %}
                     <a href="{{ outRoute('auth') }}" class="header-wow-top-list-icon-item" ><i class="ti ti-login"></i></a>
-                    {% endif %}  
-                    {% endif %}                  
+                    {% endif %}
 
                   </div>
                    
@@ -112,12 +110,6 @@
                         <div class="toolbar-link mr10" >
                             <a href="{{ outRoute('ad-create') }}" class="header-wow-sticky-add button-color-scheme1" > {{ translate("tr_6a597fed338ace644982313b3cfbead4") }} </a>
                         </div>
-
-                        {% if($template->user->isAuth()): %}
-                        <div class="toolbar-link toolbar-link-profile mr10">
-                            {% component profile/menu/header-menu.tpl %}
-                        </div>
-                        {% endif %}
 
                         {% if(!$template->user->isAuth()): %}
                         {% if($template->router->currentRoute->name == "login"): %}
