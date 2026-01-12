@@ -4,8 +4,15 @@
    <div class="header-wow-top" >
         <div class="container" >
            <div class="row" >
-               <div class="col-lg-9 col-9" >
-                   
+               <div class="col-lg-2">
+
+                  <a class="h-logo" href="{{ outLink(); }}" title="{{ $template->settings->project_title }}" >
+                      <img src="{{ $template->storage->logo() }}"  alt="{{ $template->settings->project_title }}">
+                  </a>
+
+               </div>
+               <div class="col-lg-7">
+
                   <div class="header-wow-top-list" >
 
                     {{ $template->component->translate->outChangeLanguages(["align-vertical"=>"top", "align-horizontal"=>"left", "container-class"=>"header-wow-top-list-item"]) }}
@@ -17,9 +24,9 @@
                     <a href="{{ outRoute('blog') }}" class="header-wow-top-list-item" >{{ translate("tr_103a554114af7c598a4f835ac463722e") }}</a>
 
                   </div>
-                    
+
                </div>
-               <div class="col-lg-3 col-3 text-end" >
+               <div class="col-lg-3 text-end" >
 
                   <div class="header-wow-top-list-icon" >
 
@@ -66,15 +73,7 @@
          
            <div class="row" >
 
-               <div class="col-2" >
-                   
-                  <a class="h-logo" href="{{ outLink(); }}" title="{{ $template->settings->project_title }}" >
-                      <img src="{{ $template->storage->logo() }}"  alt="{{ $template->settings->project_title }}">
-                  </a>
-
-               </div>
-
-               <div class="col-10" >
+               <div class="col-12" >
                    
                 <div class="header-flex-box" >
 
